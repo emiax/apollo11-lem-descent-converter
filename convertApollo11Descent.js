@@ -6,7 +6,7 @@ const xmlJs = require('xml-js');
 const fs = require('fs');
 
 const inputFile = 'the_last_four_minutes_2019-06-09.kml';
-const outputFile = 'apollo11LemDescent.asset';
+const outputFile = 'apollo11_lem_descent.asset';
 
 const forcedLandingSpot = [23.4733, 0.6741, -1925];
 
@@ -115,7 +115,7 @@ output = '-- The following keyframe data was converted from ' + inputFile + ',\n
          '--   * The descent markers in the KML have Point nodes expressed "relaivte to ground"\n' +
          '--     We assume that the ground is fixed at altitude ' + -forcedLandingSpot[2] + ' meters below the reference ellipsoid,\n' +
          '--     in order to match height data from a height map constructed from LRO data.\n' +
-         '--   * We manually offset the coordiantes slightly, by ' + offset[0] + 'degrees in longitude and ' + offset[1] + ' degrees in latitude, \n' +
+         '--   * We manually offset the coordiantes slightly, by ' + offset[0] + ' degrees in longitude and ' + offset[1] + ' degrees in latitude, \n' +
          '--     in order to match the landing spot specified at long: ' + forcedLandingSpot[0] + ', lat: ' + forcedLandingSpot[1] + ' extracted from footage from LRO.\n' +
          '--     The kml file provided ' + originalLandingSpot[0] + ', lat: ' + originalLandingSpot[1] + ' as the landing coordinates - hence the manual offset.\n' + 
          '--     If more accurate height/color maps are aqcuired, these values can be adjusted by running the conversion script again.\n' + 
