@@ -1,0 +1,15 @@
+{
+  "name": "apollo11-lem-descent-converter",
+  "version": "1.0.0",
+  "description": "Convert Apollo 11 LEM Descent data to a timeline of OpenSpace translations",
+  "main": "convertApollo11Descent.js",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emil Axelsson",
+  "license": "MIT"
+}
