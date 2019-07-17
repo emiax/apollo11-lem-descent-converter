@@ -112,10 +112,10 @@ const offset = [forcedLandingSpot[0] - originalLandingSpot[0],
 output = '-- The following keyframe data was converted from ' + inputFile + ',\n' + 
          '-- which is available at http://apollo.mem-tek.com/GoogleMoonKMZ.html\n\n' +
          '-- In the conversion, some assumptions and simplifications were made:\n' +
-         '--   * The descent markers in the KML have Point nodes expressed "relaivte to ground"\n' +
+         '--   * The descent markers in the KML have Point nodes expressed "relative to ground"\n' +
          '--     We assume that the ground is fixed at altitude ' + -forcedLandingSpot[2] + ' meters below the reference ellipsoid,\n' +
          '--     in order to match height data from a height map constructed from LRO data.\n' +
-         '--   * We manually offset the coordiantes slightly, by ' + offset[0] + ' degrees in longitude and ' + offset[1] + ' degrees in latitude, \n' +
+         '--   * We manually offset the coordiantes slightly, by ' + offset[0] + ' degrees in longitude and ' + offset[1] + ' degrees in latitude,\n' +
          '--     in order to match the landing spot specified at long: ' + forcedLandingSpot[0] + ', lat: ' + forcedLandingSpot[1] + ' extracted from footage from LRO.\n' +
          '--     The kml file provided ' + originalLandingSpot[0] + ', lat: ' + originalLandingSpot[1] + ' as the landing coordinates - hence the manual offset.\n' + 
          '--     If more accurate height/color maps are aqcuired, these values can be adjusted by running the conversion script again.\n' + 
